@@ -6,3 +6,103 @@
 body{
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.contenedor{
+	display: grid;
+	grid-template-areas: 
+	'header header header' 
+	'resultados resultados resultados' 
+	'noticias noticias posiciones'
+	'publicidades publicidades publicidades'
+	'footer footer footer';
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: 1fr 2fr 6fr 2fr .5fr;
+	gap: 20px;
+	width: 100%;
+}
+
+header{
+	grid-area: header;
+	display: grid;
+	grid-template-areas: 'title title rrss' 'navbar navbar navbar';
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: 2fr 1fr;
+	gap: 10px;
+	height: 100%;
+	width: 100%;
+
+	
+}
+
+.header__title{
+	grid-area: title;
+	display: flex;
+	align-items: center;
+	flex-flow: row nowrap;
+	border: 3px black solid;
+	background: green;
+	padding: 20px;
+}
+
+.header__title h1{
+	color: white;
+	margin-left: 20px;
+}
+
+.header__title img{
+	height: 80px;
+}
+
+.header__rrss{
+	grid-area: rrss;
+	border: 3px black solid;
+	background: violet;
+}
+
+.header__rrss ul{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: end;
+	list-style: none;
+	padding: 20px;
+}
+
+.header__rrss ul li a{
+	text-decoration: none;
+	font-size: 100%;
+	color: white;
+	font-weight: bold;
+	margin-right: 15px;
+}
+
+.header__navbar{
+	grid-area: navbar;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	border: solid black 3px;
+	background: red;
+}
+
+.header__navbar ul{
+	display: flex;
+	flex-flow: row nowrap;	
+	list-style: none;
+	margin-left: 40px;
+}
+
+.header__navbar ul li a{
+	margin-left: 15px;
+	color: white;
+	font-size: 100%;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+footer{
+	grid-area: footer;
+	background: yellow;
+	border: solid black 3px;
+	width: 100%;
+}
