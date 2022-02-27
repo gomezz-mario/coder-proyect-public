@@ -5,20 +5,20 @@
 
 body{
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	
 }
 
 .grid-conteiner{
 	display: grid;
-	grid-template-rows: 180px auto 80px;
-	grid-template-columns: auto auto auto;
+	grid-template-rows: 180px auto auto auto 80px;
+	grid-template-columns: auto 400px;
 	gap: 20px;
 	width: 100%;
 }
 
 header{
 	display: grid;
-	grid-column: 1/4;
-	grid-row: 1/2;
+	grid-area: 1 / 1 / 2 / 3;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 70% 30%;
 	height: 100%;
@@ -88,8 +88,7 @@ header{
 }
 
 .noticias{
-	grid-column: 1 / 3;
-	grid-row: 2 / 3;
+	grid-area: 3 / 1 / 4 / 2;
 
 	display: flex;
 	flex-flow: row wrap;
@@ -104,7 +103,7 @@ header{
 	height: 500px;
 	overflow: hidden;
 	background: white;
-	margin: 10px auto;
+	margin: 10px;
 }
 
 .noticia__content{
@@ -129,14 +128,38 @@ header{
 
 .noticia__fondo{
 	position: relative;
+	width: 600px;
 	top: -150px;
 	z-index: 0;
 }
 
+.resultados{
+	grid-area: 2 / 1 / 3 / 3;
+	background: green;
+}
+
+.posiciones{
+	grid-area: 3 / 2 / 4 / 3;
+	background: palegreen;
+}
+
+.publicidades{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px;
+	grid-area: 4 / 1 / 5 / 3;
+	background: orangered;
+}
+
+.publicidades img{
+	height: 80px;
+}
+
 footer{
-	grid-area: 3/1/4/4;
+	grid-area: 5 / 1 / 6 / 3;
 	background: #003554;
 	color: white;
-	width: 100%;
 	padding: 25px;
 }
