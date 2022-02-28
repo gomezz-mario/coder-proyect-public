@@ -23,6 +23,10 @@ header{
 	width: 100%;
 }
 
+.header__gradiente{
+	background-image: linear-gradient(black, rgb(189, 38, 38));
+}
+
 .header__title-container{
 	width: 100%;
 }
@@ -60,10 +64,18 @@ header{
 	padding: 15px;
 }
 
+
+
 .header__rrss ul li a{
+	color: orangered;
 	margin-right: 15px;
 	text-decoration: none;
-	color: orangered;
+	transition: all 1s;
+}
+
+.header__rrss ul li :hover{
+	color: rgb(255, 186, 36);;
+	font-weight: bold;
 }
 
 nav{
@@ -84,7 +96,14 @@ nav ul li a{
 	margin-right: 15px;
 	text-decoration: none;
 	color: orangered;
+	transition: all 0.5s;
 }
+
+nav ul li a:hover{
+	font-weight: bold;
+	color: rgb(255, 186, 36);
+}
+
 
 .index-main-conteiner{
 	display: grid;
@@ -102,7 +121,6 @@ nav ul li a{
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-
 }
 
 .section-posts{
@@ -168,6 +186,7 @@ aside{
 }
 
 .publicidades{
+	margin-top: 40px;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
@@ -194,6 +213,9 @@ footer{
 	width: 100%;
 }
 
+.footer-gradiente{
+	background-image: linear-gradient(to top,black,rgb(189, 38, 38));
+}
 
 .clubes-main-container{
 	display: flex;
@@ -220,13 +242,18 @@ footer{
 	background: rgb(245, 245, 245);
 	box-shadow: rgba(0, 0, 0, .1) 1px 1px 1px 1px;
 	border-radius: 5px;
+	
 }
+
+
 
 .equipo__title{
 	background-color: rgb(78, 78, 78);
 	color: orangered;
 	width: 100%;
 }
+
+
 
 .equipo__logo{
 	display: flex;
@@ -235,6 +262,8 @@ footer{
 	align-items: center;
 	height: 100%;
 	width: 100%;
+	transition: all;
+	transition-duration: 2s;
 }
 
 .equipo__title h3{
@@ -244,6 +273,11 @@ footer{
 .equipo__logo img{
 	height: 150px;
 	width: 150px;
+}
+
+.equipo__logo :hover{
+	height: 101%;
+	width: 101%;
 }
 
 
