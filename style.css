@@ -13,7 +13,6 @@
 	width: 18rem;
 }
 
-
 body{
 	background-image: linear-gradient(to top, rgb(249, 254, 255), rgb(225, 248, 255));
 }
@@ -29,15 +28,6 @@ body{
 	height: 101%;
 }
 
-
 .gradient{
 	background-image: linear-gradient(rgb(0,0,0), rgb(255, 74, 19));
-}
-/*breakpoint lg*/
-@media (max-width: 992px) {
-
-	.card-noticia{
-		width: 100%;
-		margin: 5px;
-	}
 }
