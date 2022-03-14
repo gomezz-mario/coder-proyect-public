@@ -1,0 +1,13 @@
+.card img{
+	cursor: pointer;
+	transition: 0.5s width ease, 0.5s heigth ease;
+
+	&:hover{
+		width: 101%;
+		height: 101%;
+	}
+}
+
+.card-noticia{
+	width: 18rem;
+}

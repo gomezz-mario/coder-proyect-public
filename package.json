@@ -1,0 +1,20 @@
+{
+  "name": "paginaweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass":
+      "sass style.scss css/style.min.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gomezz-mario/curso-coder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gomezz-mario/curso-coder/issues"
+  },
+  "homepage": "https://github.com/gomezz-mario/curso-coder#readme"
+}
